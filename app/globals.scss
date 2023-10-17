@@ -56,3 +56,23 @@ button {
   width: 87.5%;
   max-width: 111rem;
 }
+
+.btn {
+  &__primary {
+    width: 15.2rem;
+    height: 5.6rem;
+    border-radius: 8px;
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: var(--color-dark-primary);
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    background-color: var(--color-light-primary);
+    transition: 0.3s background-color ease-in, 0.3s color ease-in;
+
+    &:hover {
+      background-color: var(--color-secondary);
+      color: var(--color-light-primary);
+    }
+  }
+}

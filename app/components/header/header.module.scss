@@ -1,9 +1,6 @@
 .header {
   padding: 3.5rem 0;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
+  position: relative;
 
   &__left,
   &__right {
@@ -19,19 +16,19 @@
 }
 
 .logo {
-  position: relative;
   height: 2.7rem;
   width: 19.7rem;
 
   &__link {
+    position: relative;
     display: inline-block;
     height: 100%;
     width: 100%;
   }
 
-  &__img {
-    object-fit: cover;
-  }
+  // &__img {
+  //   object-fit: cover;
+  // }
 }
 
 .nav {
@@ -41,7 +38,6 @@
 @media screen and (min-width: 768px) {
   .header {
     padding: 6.4rem 0;
-    position: relative;
   }
 
   .toggle {
