@@ -20,6 +20,7 @@ html {
 }
 
 body {
+  position: relative;
   box-sizing: border-box;
   min-height: 100vh;
   font-size: 1.6rem;
@@ -59,6 +60,9 @@ button {
 
 .btn {
   &__primary {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 15.2rem;
     height: 5.6rem;
     border-radius: 8px;

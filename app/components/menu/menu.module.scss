@@ -1,10 +1,11 @@
 .menu {
   background-color: rgba(0, 0, 0, 0.5);
-  height: calc(100vh - 9.7rem);
+  height: calc(100% - 9.7rem);
   position: absolute;
-  top: 100%;
+  top: 9.7rem;
   left: 0;
   width: 100%;
+  z-index: 10;
 }
 
 .nav {
