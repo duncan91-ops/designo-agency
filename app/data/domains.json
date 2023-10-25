@@ -1,0 +1,35 @@
+[
+    {
+        "id": 1,
+        "name": "Web Design",
+        "slug": "web-design",
+        "description": "We build websites that serve as powerful marketing tools and bring memorable brand experiences.",
+        "image": {
+            "mobile": "/assets/images/mobile/image-web-design.jpg",
+            "tablet": "/assets/images/tablet/image-web-design.jpg",
+            "desktop": "/assets/images/desktop/image-web-design.jpg"
+        }
+    },
+    {
+        "id": 2,
+        "name": "App Design",
+        "slug": "app-design",
+        "description": "Our mobile designs bring intuitive digital solutions to your customers right at their fingertips.",
+        "image": {
+            "mobile": "/assets/images/mobile/image-app-design.jpg",
+            "tablet": "/assets/images/tablet/image-app-design.jpg",
+            "desktop": "/assets/images/desktop/image-app-design.jpg"
+        }
+    },
+    {
+        "id": 3,
+        "name": "Graphic Design",
+        "slug": "graphic-design",
+        "description": "We deliver eye-catching branding materials that are tailored to meet your business objectives.",
+        "image": {
+            "mobile": "/assets/images/mobile/image-graphic-design.jpg",
+            "tablet": "/assets/images/tablet/image-graphic-design.jpg",
+            "desktop": "/assets/images/desktop/image-graphic-design.jpg"
+        }
+    }
+]
