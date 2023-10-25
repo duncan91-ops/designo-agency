@@ -8,4 +8,5 @@ export type Domain = {
     tablet: string;
     desktop: string;
   };
+  heroImage: string;
 };

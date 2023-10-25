@@ -5,7 +5,10 @@ import { Domain } from "@/types/domain";
 export default function Domain({ domain }: { domain: Domain }) {
   return (
     <li className={styles.domain} key={domain.id}>
-      <Link className={styles.domain__link} href="#"></Link>
+      <Link
+        className={styles.domain__link}
+        href={`/domains/${domain.slug}`}
+      ></Link>
       <div className={styles.domain__overlay}></div>
       <picture>
         <source media="(min-width: 1280px)" srcSet={domain.image.desktop} />
@@ -24,9 +27,9 @@ export default function Domain({ domain }: { domain: Domain }) {
             <path
               d="M1 1l4 4-4 4"
               stroke="#E7816B"
-              stroke-width="2"
+              strokeWidth="2"
               fill="none"
-              fill-rule="evenodd"
+              fillRule="evenodd"
             />
           </svg>
         </p>

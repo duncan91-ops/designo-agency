@@ -8,7 +8,8 @@
             "mobile": "/assets/images/mobile/image-web-design.jpg",
             "tablet": "/assets/images/tablet/image-web-design.jpg",
             "desktop": "/assets/images/desktop/image-web-design.jpg"
-        }
+        },
+        "heroImage": "/assets/icons/bg-pattern-intro-web.svg"
     },
     {
         "id": 2,
@@ -19,7 +20,8 @@
             "mobile": "/assets/images/mobile/image-app-design.jpg",
             "tablet": "/assets/images/tablet/image-app-design.jpg",
             "desktop": "/assets/images/desktop/image-app-design.jpg"
-        }
+        },
+        "heroImage": "/assets/icons/bg-pattern-intro-app.svg"
     },
     {
         "id": 3,
@@ -30,6 +32,7 @@
             "mobile": "/assets/images/mobile/image-graphic-design.jpg",
             "tablet": "/assets/images/tablet/image-graphic-design.jpg",
             "desktop": "/assets/images/desktop/image-graphic-design.jpg"
-        }
+        },
+        "heroImage": "/assets/icons/bg-pattern-intro-graphic.svg"
     }
 ]

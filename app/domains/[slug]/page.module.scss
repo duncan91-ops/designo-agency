@@ -1,0 +1,105 @@
+.main {
+  padding-bottom: 28.6rem;
+  display: flex;
+  flex-direction: column;
+  gap: 9.6rem;
+  background: url("../../assets/icons/bg-pattern-leaf.svg") left top 12.6rem /
+    100.6rem no-repeat;
+}
+
+.hero {
+  background-color: var(--color-primary);
+  background-position: center bottom 2rem;
+  background-repeat: no-repeat;
+  height: 32rem;
+
+  &__content {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+    justify-content: center;
+    max-width: 40rem;
+    margin: 0 auto;
+  }
+}
+
+.title {
+  color: var(--color-light-primary);
+  text-align: center;
+  font-size: 3.2rem;
+  font-weight: 500;
+  line-height: 3.6rem;
+}
+
+.msg {
+  color: var(--color-light-primary);
+  text-align: center;
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+}
+
+.projects {
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 4rem;
+}
+
+.domains {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-auto-rows: 25rem;
+  row-gap: 2.4rem;
+}
+
+@media screen and (min-width: 768px) {
+  .main {
+    padding-bottom: 38.4rem;
+    gap: 12rem;
+  }
+
+  .hero {
+    height: 25.2rem;
+    margin: 0 auto;
+    width: 87.5%;
+    max-width: 111rem;
+    border-radius: 15px;
+    background-position: left center;
+  }
+
+  .title {
+    font-size: 4.8rem;
+    line-height: 4.8rem;
+  }
+
+  .msg {
+    font-size: 1.6rem;
+    line-height: 2.6rem;
+  }
+
+  .projects {
+    row-gap: 3.2rem;
+  }
+
+  .domains {
+    grid-auto-rows: 20rem;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .main {
+    padding-bottom: 38rem;
+    gap: 16rem;
+  }
+
+  .projects {
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 3rem;
+  }
+
+  .domains {
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: 30.8rem;
+    column-gap: 3rem;
+  }
+}
