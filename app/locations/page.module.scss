@@ -1,0 +1,157 @@
+.main {
+  padding-bottom: 31rem;
+}
+
+.locations {
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 4.8rem;
+}
+
+.location {
+  height: 71.4rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 32rem 1fr;
+
+  &__img {
+    &.canada {
+      background: url("../assets/images/tablet/image-map-canada.png") center /
+        cover no-repeat;
+    }
+
+    &.australia {
+      background: url("../assets/images/tablet/image-map-australia.png") center /
+        cover no-repeat;
+    }
+
+    &.uk {
+      background: url("../assets/images/tablet/image-map-uk.png") center / cover
+        no-repeat;
+    }
+  }
+
+  &__details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2.4rem;
+    background-color: var(--color-tertiary);
+  }
+
+  &__name {
+    color: var(--color-primary);
+    text-transform: capitalize;
+    font-size: 3.2rem;
+    font-weight: 500;
+    line-height: 3.6rem;
+  }
+
+  &__address,
+  &__contact {
+    color: var(--color-dark-secondary);
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+    text-align: center;
+
+    .title {
+      font-weight: 700;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .main {
+    padding-bottom: 38.4rem;
+  }
+
+  .locations {
+    row-gap: 12rem;
+    justify-items: center;
+  }
+
+  .location {
+    width: 87.5%;
+    max-width: 111rem;
+    height: 67.6rem;
+    row-gap: 2.4rem;
+    grid-template-rows: 1fr 1fr;
+
+    &__img {
+      border-radius: 15px;
+      overflow: hidden;
+    }
+
+    &__details {
+      border-radius: 15px;
+      overflow: hidden;
+      display: grid;
+      grid-template-columns: 25.5rem 25.5rem;
+      row-gap: 2.4rem;
+      column-gap: 3rem;
+      justify-items: start;
+      align-items: start;
+    }
+
+    &__name {
+      grid-column: 1 / span 2;
+      align-self: end;
+      font-size: 4rem;
+      line-height: 4.8rem;
+    }
+
+    &__address,
+    &__contact {
+      text-align: left;
+      font-size: 1.6rem;
+      line-height: 2.6rem;
+    }
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .main {
+    padding-bottom: 38rem;
+  }
+
+  .locations {
+    row-gap: 3.2rem;
+  }
+
+  .location {
+    height: 32.6rem;
+    grid-template-columns: repeat(2, min-content);
+    grid-template-rows: 1fr;
+    column-gap: 3rem;
+
+    &__img {
+      width: 35rem;
+
+      &.canada {
+        background: url("../assets/images/desktop/image-map-canada.png") center /
+          cover no-repeat;
+      }
+
+      &.australia {
+        background: url("../assets/images/desktop/image-map-australia.png")
+          center / cover no-repeat;
+      }
+
+      &.uk {
+        background: url("../assets/images/desktop/image-map-united-kingdom.png")
+          center / cover no-repeat;
+      }
+    }
+
+    &__details {
+      width: 73rem;
+    }
+
+    &:nth-child(odd) {
+      .location__img {
+        order: 2;
+      }
+    }
+  }
+}
