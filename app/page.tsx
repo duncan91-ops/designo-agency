@@ -12,7 +12,7 @@ export const metadata: Metadata = {
   title: "Designo Agency | Home",
 };
 
-export default function Home() {
+export default function HomePage() {
   const domains = getDomains();
 
   return (

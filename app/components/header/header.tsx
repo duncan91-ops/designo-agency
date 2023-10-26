@@ -7,8 +7,6 @@ import styles from "./header.module.scss";
 import logo from "@/images/logo-dark.png";
 import Menu from "../menu/menu";
 
-const pages = ["our company", "locations", "contact"];
-
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState<boolean>(false);
 
@@ -67,15 +65,21 @@ export default function Header() {
           </div>
           <nav className={styles.nav}>
             <ul className={styles.nav__items}>
-              {pages.map((page) => {
-                return (
-                  <li key={page} className={styles.nav__item}>
-                    <Link href="#" className={styles.nav__link}>
-                      {page}
-                    </Link>
-                  </li>
-                );
-              })}
+              <li className={styles.nav__item}>
+                <Link href="/about" className={styles.nav__link}>
+                  our company
+                </Link>
+              </li>
+              <li className={styles.nav__item}>
+                <Link href="/locations" className={styles.nav__link}>
+                  locations
+                </Link>
+              </li>
+              <li className={styles.nav__item}>
+                <Link href="/contact" className={styles.nav__link}>
+                  contact
+                </Link>
+              </li>
             </ul>
           </nav>
         </div>

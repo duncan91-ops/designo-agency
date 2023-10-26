@@ -1,0 +1,45 @@
+.locations {
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 4.8rem;
+}
+
+.location {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+}
+
+.img {
+  position: relative;
+  width: 20.2rem;
+  height: 20.2rem;
+  margin-bottom: 4.8rem;
+}
+
+.name {
+  color: var(--color-dark-secondary);
+  font-size: 2rem;
+  font-weight: 500;
+  line-height: 2.6rem;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 3.2rem;
+}
+
+@media screen and (min-width: 768px) {
+  .locations {
+    row-gap: 8rem;
+    width: 87.5%;
+    max-width: 111rem;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .locations {
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 3rem;
+  }
+}

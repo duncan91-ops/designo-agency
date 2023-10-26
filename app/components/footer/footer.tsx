@@ -3,8 +3,6 @@ import Link from "next/link";
 import styles from "./footer.module.scss";
 import logo from "@/images/logo-light.png";
 
-const pages = ["our company", "locations", "contact"];
-
 export default function Footer() {
   return (
     <footer className={styles.footer}>
@@ -30,15 +28,21 @@ export default function Footer() {
           </div>
           <div className={styles.divider}></div>
           <ul className={styles.nav__items}>
-            {pages.map((page) => {
-              return (
-                <li key={page} className={styles.nav__item}>
-                  <Link href="#" className={styles.nav__link}>
-                    {page}
-                  </Link>
-                </li>
-              );
-            })}
+            <li className={styles.nav__item}>
+              <Link href="/about" className={styles.nav__link}>
+                our company
+              </Link>
+            </li>
+            <li className={styles.nav__item}>
+              <Link href="/locations" className={styles.nav__link}>
+                locations
+              </Link>
+            </li>
+            <li className={styles.nav__item}>
+              <Link href="/contact" className={styles.nav__link}>
+                contact
+              </Link>
+            </li>
           </ul>
         </nav>
         <article className={styles.address}>
