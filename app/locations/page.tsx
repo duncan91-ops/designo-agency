@@ -54,9 +54,8 @@ export default function LocationsPage() {
           </div>
         </article>
       </section>
-      <section>
-        <Cta />
-      </section>
+
+      <Cta />
     </main>
   );
 }

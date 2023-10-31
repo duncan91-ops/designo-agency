@@ -18,7 +18,7 @@ export default function AboutPage() {
         </div>
       </section>
 
-      <section className={styles.caption}>
+      <section className={`${styles.caption} ${styles.first}`}>
         <div className={`${styles.caption__img} ${styles.caption__main}`}></div>
         <div className={styles.caption__details}>
           <h2 className={styles.caption__title}>World-class talent</h2>
@@ -59,9 +59,7 @@ export default function AboutPage() {
         </div>
       </section>
 
-      <section>
-        <Cta />
-      </section>
+      <Cta />
     </main>
   );
 }

@@ -32,6 +32,7 @@ export default function DomainPage({ params }: { params: { slug: string } }) {
           <p className={styles.msg}>{domain.description}</p>
         </div>
       </section>
+
       <section>
         <ul className={`${styles.projects} container`}>
           {projects.map((project) => (
@@ -39,6 +40,7 @@ export default function DomainPage({ params }: { params: { slug: string } }) {
           ))}
         </ul>
       </section>
+
       <nav className={styles.nav}>
         <ul className={`${styles.domains} container`}>
           {otherDomains.map((domain) => (
@@ -46,9 +48,8 @@ export default function DomainPage({ params }: { params: { slug: string } }) {
           ))}
         </ul>
       </nav>
-      <section>
-        <Cta />
-      </section>
+
+      <Cta />
     </main>
   );
 }

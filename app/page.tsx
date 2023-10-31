@@ -32,6 +32,7 @@ export default function HomePage() {
           </Link>
         </div>
       </section>
+
       <nav className={styles.nav}>
         <ul className={`${styles.domains} container`}>
           {domains.map((domain) => {
@@ -39,6 +40,7 @@ export default function HomePage() {
           })}
         </ul>
       </nav>
+
       <section className={styles.values}>
         <ul className={`${styles.qualities} container`}>
           <li className={styles.quality}>
@@ -91,9 +93,8 @@ export default function HomePage() {
           </li>
         </ul>
       </section>
-      <section>
-        <Cta />
-      </section>
+
+      <Cta />
     </main>
   );
 }

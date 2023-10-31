@@ -1,10 +1,11 @@
 .main {
-  // padding-bottom: 28.6rem;
+  padding-bottom: 28.6rem;
   display: flex;
   flex-direction: column;
   gap: 9.6rem;
   background: url("../../assets/icons/bg-pattern-leaf.svg") left top 12.6rem /
     100.6rem no-repeat;
+  position: relative;
 }
 
 .hero {
@@ -54,7 +55,7 @@
 
 @media screen and (min-width: 768px) {
   .main {
-    // padding-bottom: 38.4rem;
+    padding-bottom: 38.4rem;
     gap: 12rem;
   }
 
@@ -88,7 +89,7 @@
 
 @media screen and (min-width: 1280px) {
   .main {
-    // padding-bottom: 38rem;
+    padding-bottom: 38rem;
     gap: 16rem;
   }
 

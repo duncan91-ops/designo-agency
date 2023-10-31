@@ -1,8 +1,9 @@
 .main {
-  // padding-bottom: 31rem;
+  padding-bottom: 31rem;
   display: flex;
   flex-direction: column;
   gap: 12rem;
+  position: relative;
 }
 
 .locations {
@@ -65,9 +66,9 @@
 }
 
 @media screen and (min-width: 768px) {
-  // .main {
-  //   padding-bottom: 38.4rem;
-  // }
+  .main {
+    padding-bottom: 38.4rem;
+  }
 
   .locations {
     row-gap: 12rem;
@@ -115,7 +116,7 @@
 
 @media screen and (min-width: 1280px) {
   .main {
-    // padding-bottom: 38rem;
+    padding-bottom: 38rem;
     gap: 16rem;
   }
 

@@ -1,5 +1,8 @@
 .main {
   padding-bottom: 31rem;
+  display: flex;
+  flex-direction: column;
+  gap: 12rem;
 }
 
 @media screen and (min-width: 768px) {
