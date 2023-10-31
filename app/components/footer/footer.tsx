@@ -6,19 +6,6 @@ import logo from "@/images/logo-light.png";
 export default function Footer() {
   return (
     <footer className={styles.footer}>
-      <header className={styles.hero}>
-        <h2 className={styles.hero__title}>
-          <span>Let’s talk about</span>
-          <span>your project</span>
-        </h2>
-        <p className={styles.hero__msg}>
-          Ready to take it to the next level? Contact us today and find out how
-          our expertise can help your business grow.
-        </p>
-        <button className={`${styles.hero__btn} btn__primary`} type="button">
-          get in touch
-        </button>
-      </header>
       <main className={`${styles.main} container`}>
         <nav className={styles.nav}>
           <div className={styles.logo}>

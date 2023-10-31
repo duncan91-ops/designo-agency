@@ -1,6 +1,6 @@
-.main {
-  padding-bottom: 31rem;
-}
+// .main {
+//   padding-bottom: 31rem;
+// }
 
 .hero {
   &__img {
@@ -38,11 +38,9 @@
 }
 
 .caption {
-  &:first-child {
-    margin-bottom: 12rem;
-  }
+  margin-bottom: 12rem;
 
-  &:last-child {
+  &.last {
     margin-top: 12rem;
   }
 
@@ -92,7 +90,7 @@
     display: grid;
     grid-template-columns: 1fr;
     row-gap: 12rem;
-    padding-bottom: 38.4rem;
+    // padding-bottom: 38.4rem;
   }
 
   .hero,
@@ -127,11 +125,7 @@
   }
 
   .caption {
-    &:first-child {
-      margin-bottom: 0;
-    }
-
-    &:last-child {
+    &.last {
       margin-top: 0;
     }
 
@@ -163,7 +157,7 @@
 
 @media screen and (min-width: 1280px) {
   .main {
-    padding-bottom: 38rem;
+    // padding-bottom: 38rem;
     row-gap: 16rem;
   }
 

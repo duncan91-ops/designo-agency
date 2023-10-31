@@ -1,5 +1,5 @@
 import styles from "./page.module.scss";
-import { Locations } from "@/components";
+import { Locations, Cta } from "@/components";
 
 export default function AboutPage() {
   return (
@@ -40,7 +40,7 @@ export default function AboutPage() {
 
       <Locations />
 
-      <section className={styles.caption}>
+      <section className={`${styles.caption} ${styles.last}`}>
         <div className={`${styles.caption__img} ${styles.caption__sub}`}></div>
         <div className={styles.caption__details}>
           <h2 className={styles.caption__title}>The real deal</h2>
@@ -57,6 +57,10 @@ export default function AboutPage() {
             take action and drive real results.
           </p>
         </div>
+      </section>
+
+      <section>
+        <Cta />
       </section>
     </main>
   );

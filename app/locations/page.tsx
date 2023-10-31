@@ -1,4 +1,5 @@
 import styles from "./page.module.scss";
+import { Cta } from "@/components";
 
 export default function LocationsPage() {
   return (
@@ -52,6 +53,9 @@ export default function LocationsPage() {
             </div>
           </div>
         </article>
+      </section>
+      <section>
+        <Cta />
       </section>
     </main>
   );
