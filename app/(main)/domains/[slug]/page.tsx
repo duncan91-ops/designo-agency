@@ -4,6 +4,17 @@ import { getProjects } from "@/utils/getProjects";
 import { Domain } from "@/components";
 import { Project } from "../components";
 
+export async function generateMetadata({
+  params,
+}: {
+  params: { slug: string };
+}) {
+  const domain = getDomains().find((domain) => domain.slug === params.slug)!;
+  return {
+    title: `Designo Agency | Domain - ${domain.name}`,
+  };
+}
+
 export async function generateStaticParams() {
   const domains = getDomains();
 

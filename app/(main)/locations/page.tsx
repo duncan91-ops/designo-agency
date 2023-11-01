@@ -1,10 +1,15 @@
+import type { Metadata } from "next";
 import styles from "./page.module.scss";
+
+export const metadata: Metadata = {
+  title: "Designo Agency | Locations",
+};
 
 export default function LocationsPage() {
   return (
     <main className={styles.main}>
       <section className={styles.locations}>
-        <article className={styles.location}>
+        <article id="canada" className={styles.location}>
           <div className={`${styles.location__img} ${styles.canada}`}></div>
           <div className={styles.location__details}>
             <h2 className={styles.location__name}>canada</h2>
@@ -20,7 +25,8 @@ export default function LocationsPage() {
             </div>
           </div>
         </article>
-        <article className={styles.location}>
+
+        <article id="australia" className={styles.location}>
           <div className={`${styles.location__img} ${styles.australia}`}></div>
           <div className={styles.location__details}>
             <h2 className={styles.location__name}>australia</h2>
@@ -36,7 +42,8 @@ export default function LocationsPage() {
             </div>
           </div>
         </article>
-        <article className={styles.location}>
+
+        <article id="uk" className={styles.location}>
           <div className={`${styles.location__img} ${styles.uk}`}></div>
           <div className={styles.location__details}>
             <h2 className={styles.location__name}>united kingdom</h2>

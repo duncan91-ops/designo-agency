@@ -18,7 +18,10 @@ export default function Locations() {
           />
         </div>
         <h2 className={styles.name}>canada</h2>
-        <Link href="/locations" className={`${styles.btn} btn__secondary`}>
+        <Link
+          href="/locations#canada"
+          className={`${styles.btn} btn__secondary`}
+        >
           see location
         </Link>
       </article>
@@ -32,7 +35,10 @@ export default function Locations() {
           />
         </div>
         <h2 className={styles.name}>australia</h2>
-        <Link href="/locations" className={`${styles.btn} btn__secondary`}>
+        <Link
+          href="/locations#australia"
+          className={`${styles.btn} btn__secondary`}
+        >
           see location
         </Link>
       </article>
@@ -46,7 +52,7 @@ export default function Locations() {
           />
         </div>
         <h2 className={styles.name}>united kingdom</h2>
-        <Link href="/locations" className={`${styles.btn} btn__secondary`}>
+        <Link href="/locations#uk" className={`${styles.btn} btn__secondary`}>
           see location
         </Link>
       </article>

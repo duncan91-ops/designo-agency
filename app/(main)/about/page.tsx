@@ -1,5 +1,10 @@
+import type { Metadata } from "next";
 import styles from "./page.module.scss";
 import { Locations } from "@/components";
+
+export const metadata: Metadata = {
+  title: "Designo Agency | About",
+};
 
 export default function AboutPage() {
   return (

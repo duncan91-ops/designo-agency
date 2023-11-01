@@ -27,7 +27,7 @@ export default function HomePage() {
             fully responsive websites, app design, and engaging brand
             experiences. Find out more about our services.
           </p>
-          <Link href="/" className="btn__primary">
+          <Link href="/about" className="btn__primary">
             learn more
           </Link>
         </div>

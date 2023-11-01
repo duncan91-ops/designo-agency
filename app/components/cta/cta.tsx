@@ -1,3 +1,4 @@
+import Link from "next/link";
 import styles from "./cta.module.scss";
 
 export default function Cta() {
@@ -11,9 +12,13 @@ export default function Cta() {
         Ready to take it to the next level? Contact us today and find out how
         our expertise can help your business grow.
       </p>
-      <button className={`${styles.cta__btn} btn__primary`} type="button">
+      <Link
+        href="/contact"
+        className={`${styles.cta__btn} btn__primary`}
+        type="button"
+      >
         get in touch
-      </button>
+      </Link>
     </div>
   );
 }
