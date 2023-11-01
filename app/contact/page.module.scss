@@ -1,18 +1,85 @@
 .main {
-  padding-bottom: 31rem;
+  padding-bottom: 12rem;
   display: flex;
   flex-direction: column;
   gap: 12rem;
 }
 
+.contact {
+  height: 76.4rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(2, min-content);
+  row-gap: 4.8rem;
+  justify-items: center;
+  align-content: center;
+  background: var(--color-primary);
+}
+
+.details {
+  width: 87.5%;
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+  align-items: center;
+}
+
+.title {
+  color: var(--color-light-primary);
+  text-align: center;
+  text-transform: capitalize;
+  font-size: 3.2rem;
+  font-weight: 500;
+  line-height: 3.6rem;
+}
+
+.message {
+  color: var(--color-light-primary);
+  text-align: center;
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+}
+
 @media screen and (min-width: 768px) {
-  .main {
-    padding-bottom: 38.4rem;
+  .contact {
+    width: 87.5%;
+    max-width: 111rem;
+    margin: 0 auto;
+    border-radius: 15px;
+    height: 71.1rem;
+    padding: 0 5.8rem;
+    row-gap: 4rem;
+  }
+
+  .details {
+    width: 100%;
+    align-items: start;
+    gap: 3.2rem;
+  }
+
+  .title {
+    font-size: 4.8rem;
+    line-height: 4.8rem;
+  }
+
+  .message {
+    text-align: left;
+    font-size: 1.6rem;
+    line-height: 2.6rem;
   }
 }
 
 @media screen and (min-width: 1280px) {
   .main {
-    padding-bottom: 38rem;
+    padding-bottom: 16rem;
+    gap: 16rem;
+  }
+
+  .contact {
+    height: 48rem;
+    grid-template-columns: 44.5rem 38rem;
+    justify-content: center;
+    align-items: center;
+    column-gap: 9.5rem;
   }
 }
