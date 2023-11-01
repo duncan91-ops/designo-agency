@@ -6,7 +6,7 @@ import { getDomains } from "@/utils/getDomains";
 import imgPassionate from "@/icons/illustration-passionate.svg";
 import imgResourceful from "@/icons/illustration-resourceful.svg";
 import imgFriendly from "@/icons/illustration-friendly.svg";
-import { Domain, Cta } from "@/components";
+import { Domain } from "@/components";
 
 export const metadata: Metadata = {
   title: "Designo Agency | Home",
@@ -93,8 +93,6 @@ export default function HomePage() {
           </li>
         </ul>
       </section>
-
-      <Cta />
     </main>
   );
 }

@@ -1,14 +1,11 @@
 import Image from "next/image";
 import Link from "next/link";
-import styles from "./footer.module.scss";
 import logo from "@/images/logo-light.png";
-import Cta from "../cta/cta";
+import styles from "./alternate-footer.module.scss";
 
-export default function Footer() {
+export default function AlternateFooter() {
   return (
     <footer className={styles.footer}>
-      <Cta />
-
       <main className={`${styles.main} container`}>
         <nav className={styles.nav}>
           <div className={styles.logo}>
@@ -35,16 +32,19 @@ export default function Footer() {
             </li>
           </ul>
         </nav>
+
         <article className={styles.address}>
           <p className={styles.title}>Designo Central Office</p>
           <p>3886 Wellington Street</p>
           <p>Toronto, Ontario M9C 3J5</p>
         </article>
+
         <article className={styles.contact}>
           <p className={styles.title}>Contact Us (Central Office)</p>
           <p>P : +1 253-863-8967</p>
           <p>M : contact@designo.co</p>
         </article>
+
         <nav className={styles.socials}>
           <ul className={styles.socials__items}>
             <li className={styles.socials__item}>

@@ -3,7 +3,6 @@
   display: flex;
   flex-direction: column;
   gap: 12rem;
-  position: relative;
 }
 
 .locations {
@@ -20,18 +19,18 @@
 
   &__img {
     &.canada {
-      background: url("../assets/images/tablet/image-map-canada.png") center /
+      background: url("../../assets/images/tablet/image-map-canada.png") center /
         cover no-repeat;
     }
 
     &.australia {
-      background: url("../assets/images/tablet/image-map-australia.png") center /
-        cover no-repeat;
+      background: url("../../assets/images/tablet/image-map-australia.png")
+        center / cover no-repeat;
     }
 
     &.uk {
-      background: url("../assets/images/tablet/image-map-uk.png") center / cover
-        no-repeat;
+      background: url("../../assets/images/tablet/image-map-uk.png") center /
+        cover no-repeat;
     }
   }
 
@@ -134,17 +133,17 @@
       width: 35rem;
 
       &.canada {
-        background: url("../assets/images/desktop/image-map-canada.png") center /
-          cover no-repeat;
+        background: url("../../assets/images/desktop/image-map-canada.png")
+          center / cover no-repeat;
       }
 
       &.australia {
-        background: url("../assets/images/desktop/image-map-australia.png")
+        background: url("../../assets/images/desktop/image-map-australia.png")
           center / cover no-repeat;
       }
 
       &.uk {
-        background: url("../assets/images/desktop/image-map-united-kingdom.png")
+        background: url("../../assets/images/desktop/image-map-united-kingdom.png")
           center / cover no-repeat;
       }
     }

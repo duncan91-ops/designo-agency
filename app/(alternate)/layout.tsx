@@ -1,7 +1,7 @@
-import "./globals.scss";
+import "../globals.scss";
 import type { Metadata } from "next";
 import { Jost } from "next/font/google";
-import { Header, Footer } from "@/components";
+import { Header, AlternateFooter } from "@/components";
 
 const jost = Jost({ subsets: ["latin"] });
 
@@ -20,7 +20,7 @@ export default function RootLayout({
       <body className={jost.className}>
         <Header />
         {children}
-        <Footer />
+        <AlternateFooter />
       </body>
     </html>
   );

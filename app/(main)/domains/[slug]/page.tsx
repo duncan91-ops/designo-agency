@@ -1,7 +1,7 @@
 import styles from "./page.module.scss";
 import { getDomains } from "@/utils/getDomains";
 import { getProjects } from "@/utils/getProjects";
-import { Domain, Cta } from "@/components";
+import { Domain } from "@/components";
 import { Project } from "../components";
 
 export async function generateStaticParams() {
@@ -48,8 +48,6 @@ export default function DomainPage({ params }: { params: { slug: string } }) {
           ))}
         </ul>
       </nav>
-
-      <Cta />
     </main>
   );
 }

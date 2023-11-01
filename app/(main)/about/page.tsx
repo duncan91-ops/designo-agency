@@ -1,5 +1,5 @@
 import styles from "./page.module.scss";
-import { Locations, Cta } from "@/components";
+import { Locations } from "@/components";
 
 export default function AboutPage() {
   return (
@@ -58,8 +58,6 @@ export default function AboutPage() {
           </p>
         </div>
       </section>
-
-      <Cta />
     </main>
   );
 }

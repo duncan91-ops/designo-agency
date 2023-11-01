@@ -3,14 +3,13 @@
   display: flex;
   flex-direction: column;
   gap: 12rem;
-  position: relative;
 }
 
 .hero {
   height: 84.3rem;
-  background: url("./assets/images/image-hero-phone.png") center bottom -34.5rem /
+  background: url("../assets/images/image-hero-phone.png") center bottom -34.5rem /
       cover no-repeat,
-    url("./assets/icons/bg-pattern-hero-home.svg") left / cover no-repeat,
+    url("../assets/icons/bg-pattern-hero-home.svg") left / cover no-repeat,
     var(--color-primary);
   display: flex;
   justify-content: center;
@@ -97,10 +96,10 @@
     width: 87.5%;
     max-width: 111rem;
     border-radius: 15px;
-    background: url("./assets/images/image-hero-phone.png") center bottom -33rem /
+    background: url("../assets/images/image-hero-phone.png") center bottom -33rem /
         contain no-repeat,
-      url("./assets/icons/bg-pattern-hero-home.svg") left 16rem center / contain
-        no-repeat,
+      url("../assets/icons/bg-pattern-hero-home.svg") left 16rem center /
+        contain no-repeat,
       var(--color-primary);
     padding: 6rem 0;
   }
@@ -152,17 +151,17 @@
   .main {
     padding-bottom: 38rem;
     gap: 16rem;
-    background: url("./assets/icons/bg-pattern-leaf.svg") right bottom 7.4rem /
+    background: url("../assets/icons/bg-pattern-leaf.svg") right bottom 7.4rem /
         100rem no-repeat,
-      url("./assets/icons/bg-pattern-leaf.svg") left top 32rem / 100rem
+      url("../assets/icons/bg-pattern-leaf.svg") left top 32rem / 100rem
         no-repeat;
   }
 
   .hero {
     height: 64rem;
-    background: url("./assets/images/image-hero-phone.png") right -5rem top 20% /
+    background: url("../assets/images/image-hero-phone.png") right -5rem top 20% /
         auto 150% no-repeat,
-      url("./assets/icons/bg-pattern-hero-home.svg") right / contain no-repeat,
+      url("../assets/icons/bg-pattern-hero-home.svg") right / contain no-repeat,
       var(--color-primary);
     justify-content: start;
     align-items: center;
